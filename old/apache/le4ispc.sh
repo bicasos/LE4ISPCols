@@ -122,7 +122,7 @@ if [ -d "$lelive" ]; then
 	leispc=/etc/init.d/le_ispc_pem.sh
 	if ls $leispc-*.bak 1> /dev/null 2>&1; then rm $leispc-*.bak; fi
 	if [ -e "$leispc" ]; then mv $leispc $leispc-$(date +"%y%m%d%H%M%S").bak; fi
-	wget -O $leispc https://raw.githubusercontent.com/ahrasis/LE4ISPC/master/apache/le_ispc_pem.sh --no-check-certificate
+	wget -O $leispc https://raw.githubusercontent.com/bicasos/LE4ISPCols/master/old/apache/le_ispc_pem.sh --no-check-certificate
 	chmod +x $leispc
 	
 	# Install incron, allow root user
